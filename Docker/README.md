@@ -16,3 +16,37 @@
 <div align="center">
 <img src="https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/virtualization-vs-containers_transparent.png?itok=q-E2I2-L" width="700px" />
 </div>
+
+---
+### Installing Docker
+| Operational System | Guide                                                    |
+|--------------------|----------------------------------------------------------|
+| Windows            | https://docs.docker.com/desktop/install/windows-install/ |
+| Linux              | https://docs.docker.com/desktop/install/linux-install/   |
+| MacOS              | https://docs.docker.com/desktop/install/mac-install/     |
+---
+
+### Usefull commands
+> docker run image-name
+> ###### _(run container. If the image doesn't exists at the local repository, look foward it at the Docker Hub)_
+
+> docker start container-id
+> ###### _(Start the container)_
+
+> docker stop container-id
+> ###### _(Stop the container)_
+
+> docker ps
+> ###### _(List the containers in execution)_
+
+> docker ps -a
+> ###### _(List the containers including the stopped ones)_
+
+> docker pull image-name
+> ###### _(Download the image with no start of the container)_
+
+> docker exec -it bash container-id
+> ###### _(Run a command inside the container at the interative mode. Start a bash for example)_
+
+> docker pause container-id
+> ###### _(Pause the container)_
