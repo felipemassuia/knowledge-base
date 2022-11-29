@@ -81,3 +81,16 @@ COPY . .
 RUN NPM INSTALL
 ENTRYPOINT NPM START
 ````
+---
+### Files and persistence
+###### There are some ways to persist data of a container. The commands below shows some ways to do it.
+<div align="center">
+<img src="https://docs.docker.com/storage/images/types-of-mounts.png" width="500px" />
+</div>
+
+> docker run -it -v /home/volume:/app ubuntu bash
+> ###### _(Create a bind mount between the "/home/volume" file and the "/app" inside the container)_
+
+> docker run -it --mount type=bind,source=/home/volume,target=/app ubuntu bash
+> ###### _(More elegant way to do the same thing)_
+
