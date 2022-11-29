@@ -1,6 +1,6 @@
 # Docker
 ###### Docker is a tool created to provide a simpler way to configure and run applications and intire simulations of operational systems trought the concept of **container**.
-###### A container is an instance of an image, wich is a descriptions of a configuration to run an application. Each container is a process inside the original system and it has some caracteristics to keep the integrity of it. The list below shows some of this concepts, known as "namespaces".
+###### A container is an instance of an image, wich is a descriptions of a configuration to run an application. Each container is a process inside the original system and it has some characteristics to keep the integrity of it. The list below shows some of this concepts, known as "namespaces".
 * **PID** Keep the isolation of the processess inside the container
 * **NET** Keep the network isolation
 * **IPC** Keep the isolation between process and shared memory
@@ -18,17 +18,20 @@
 </div>
 
 ---
+### The images
+###### An image is a group of layers of another images, with is a description of an app or environment. When we  create a container, we are adding an aditional layer at the top of the image, with the ability to read and write there. When we remove a container, we are removing this layer. An image can be reused by a lot of images that use this first image to create itself. This is one of the reasons that do Docker so light and fast to put working.
+---
 ### Installing Docker
 | Operational System | Guide                                                    |
 |--------------------|----------------------------------------------------------|
 | Windows            | https://docs.docker.com/desktop/install/windows-install/ |
 | Linux              | https://docs.docker.com/desktop/install/linux-install/   |
 | MacOS              | https://docs.docker.com/desktop/install/mac-install/     |
----
 
+---
 ### Usefull commands
 > docker run image-name
-> ###### _(run container. If the image doesn't exists at the local repository, look foward it at the Docker Hub)_
+> ###### _(run container. If the image doesn't exists at the local repository, look foward it at the Docker Hub. Use "-d" parameter to run in detached mode. Use "-P" to expose port between container and host)_
 
 > docker start container-id
 > ###### _(Start the container)_
@@ -50,3 +53,31 @@
 
 > docker pause container-id
 > ###### _(Pause the container)_
+
+> docker rm container-id
+> ###### _(Remove container. Use "--force" parameter to force stop before removing)_
+
+> docker images
+> ###### _(List images)_
+
+> docker build -t user/image-name:1.0 .
+> ###### _(Create image from Dockerfile)_
+
+> docker inspect image-id
+> ###### _(Show technical features about the image)_
+
+> docker history image-id
+> ###### _(Show layers that compose an image)_
+---
+### Creating images
+###### Create an image is a task that you can configure all the process to run your app. It is a good idea to follow the docker reference to create an image as the link above shows.
+> https://docs.docker.com/engine/reference/builder/
+###### To create an image, you will need to create a file called "Dockerfile" (with no extension). Inside this one, you can configure some commands. The description below shows a web app that can be built using docker build command.
+
+````
+FROM note:14
+WORKDIR apps/node
+COPY . .
+RUN NPM INSTALL
+ENTRYPOINT NPM START
+````
