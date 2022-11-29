@@ -88,9 +88,21 @@ ENTRYPOINT NPM START
 <img src="https://docs.docker.com/storage/images/types-of-mounts.png" width="500px" />
 </div>
 
+* Bind mount
+* Volume
+* Tmpfs mount
+
 > docker run -it -v /home/volume:/app ubuntu bash
 > ###### _(Create a bind mount between the "/home/volume" file and the "/app" inside the container)_
 
 > docker run -it --mount type=bind,source=/home/volume,target=/app ubuntu bash
 > ###### _(More elegant way to do the same thing)_
 
+> docker volume ls
+> ###### _(List volumes)_
+
+> docker volume create volume-name
+> ###### _(Create a volume called "volume-name")_
+
+> docker run -it --tmpfs=/app ubuntu bash
+> ###### _(Create a temporary file to be used by container)_
