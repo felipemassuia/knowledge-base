@@ -106,3 +106,49 @@ ENTRYPOINT NPM START
 
 > docker run -it --tmpfs=/app ubuntu bash
 > ###### _(Create a temporary file to be used by container)_
+---
+### Network
+###### Docker has a mechanism to ensure the isolation of network interfaces and also the DNS communication of containers
+
+> docker inspect container-id
+> ###### _(Show container technical features)_
+
+> docker network ls
+> ###### _(Show networks technical features)_
+
+> docker network create --driver bridge my-network
+> ###### _(Create network)_
+---
+### Docker Compose
+###### Docker compose is a tool to define multi containers environments.
+###### To use this tool, create a file named docker-compose.yml
+> https://docs.docker.com/compose/features-uses/
+
+````yml
+version : '3.3'
+
+networks:
+    default-network:
+        driver: bridge
+
+volumes:
+    prometheus_data:
+    grafana_data:
+
+services:
+    prometheus:
+        image: prom/prometheus:latest
+        volumes:
+            - ./config/prometheus.yml:etc/prometheus/prometheus.yml
+            - prometheus_data:/prometheus
+        networks:
+            - default-network
+        ports:
+            - 9090:9090
+    grafana:
+        image: grafana/grafana:latest
+        ports:
+            - 3000:3000
+        networks:
+            - default-network
+````
