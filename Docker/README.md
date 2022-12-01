@@ -57,6 +57,9 @@
 > docker rm container-id
 > ###### _(Remove container. Use "--force" parameter to force stop before removing)_
 
+> docker rm $(docker ps -aq) --force
+> ###### _(Remove all containers)_
+
 > docker images
 > ###### _(List images)_
 
