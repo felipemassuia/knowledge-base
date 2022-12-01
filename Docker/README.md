@@ -124,6 +124,9 @@ ENTRYPOINT NPM START
 ###### To use this tool, create a file named docker-compose.yml
 > https://docs.docker.com/compose/features-uses/
 
+> docker-compose up
+> ###### _(Run the docker-compose.yml file)_
+
 ````yml
 version : '3.3'
 
