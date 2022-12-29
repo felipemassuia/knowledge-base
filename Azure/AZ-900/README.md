@@ -35,3 +35,10 @@
 * **Multi-cloud** is a scenario that the consumer uses different cloud services from different cloud providers.
 
 ###### **Azure Arc** is a set of technologies that helps manage your cloud environment.
+
+### Consumption-based model
+###### A cloud provider typically uses a pay as you go pricing model. It means that you only pay for the services that you use. It is like you are renting someone else datacenter to run you app or storage data. To sign up for a cloud service is an OpeX cost, and it has a set of benefits, as you can see bellow:
+* No upfront costs.
+* No need to purchase and manage costly infrastructure that users might not use to its fullest potential.
+* The ability to pay for more resources when they're needed.
+* The ability to stop paying for resources that are no longer needed.
