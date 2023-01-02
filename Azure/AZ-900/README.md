@@ -50,3 +50,9 @@
 ###### It is the ability to ajust resources to meet demand. When you have a rush traffic and your systems are overloaded, a scalable system can increase resources like memory or even intances to keep the system running well. On the other hand, when your resources are underused, you can decrease your capacity by removing resources as far as you pay for what you use.
 * **Vertical scaling** is a way to scale by adding processing power to your system, like adding RAM or more CPUs.
 * **Horizontal scaling** is another way that you can scale by adding more resources (instances) to meet demand.
+### Reliability
+###### It is the ability to recover from failures and keep running. It is a part of the Azure concept a reliable infrastructure. As a datacenter stop running by a catastrophic event, Azure can transmit yout app to another one  with no action by the app support team.
+### Predictability
+###### The ability to previously know how much a solution will cost, or the performance of a service in Azure.
+### Security and governance
+###### You can control the resources to keep in line with the governance of your company or laws of a country, and update those templates as log as they change. At the same time, Azure has some security patterns providded to protect your resources from malicious components or attacts from the internet.
