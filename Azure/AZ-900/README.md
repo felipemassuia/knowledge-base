@@ -42,3 +42,11 @@
 * No need to purchase and manage costly infrastructure that users might not use to its fullest potential.
 * The ability to pay for more resources when they're needed.
 * The ability to stop paying for resources that are no longer needed.
+---
+## The benefits of using cloud services
+### High availability
+###### A quality that represents a software that can handle with some troubles to keep up running.
+### Scalability
+###### It is the ability to ajust resources to meet demand. When you have a rush traffic and your systems are overloaded, a scalable system can increase resources like memory or even intances to keep the system running well. On the other hand, when your resources are underused, you can decrease your capacity by removing resources as far as you pay for what you use.
+* **Vertical scaling** is a way to scale by adding processing power to your system, like adding RAM or more CPUs.
+* **Horizontal scaling** is another way that you can scale by adding more resources (instances) to meet demand.
