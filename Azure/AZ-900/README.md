@@ -56,3 +56,13 @@
 ###### The ability to previously know how much a solution will cost, or the performance of a service in Azure.
 ### Security and governance
 ###### You can control the resources to keep in line with the governance of your company or laws of a country, and update those templates as log as they change. At the same time, Azure has some security patterns providded to protect your resources from malicious components or attacts from the internet.
+---
+## Cloud service types
+### Infrastructure as a Service
+##### It is a kind of cloud service that you "rend" the hardware and be responsible for keep the OS pacthes, the network configuration, and so on.
+##### It is a common scenario when you want to migrate your datacenter to the cloud, with no modification. It is known as "lift and shift" migration.
+### Platform as a Service
+##### _"Platform as a service (PaaS) is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service)."_
+##### In this model, the cloud provider is responsible for maintaining the operational systems, middleware, development tools and etc. You don't need to worry about OS and databases.
+### Software as a Service
+##### It is the most complete solution of a cloud service. You rent a fully developed application. You are responsible for the data that you put into the system and the devices that can connect to it.
