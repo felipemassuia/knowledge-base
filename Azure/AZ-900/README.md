@@ -66,3 +66,31 @@
 ##### In this model, the cloud provider is responsible for maintaining the operational systems, middleware, development tools and etc. You don't need to worry about OS and databases.
 ### Software as a Service
 ##### It is the most complete solution of a cloud service. You rent a fully developed application. You are responsible for the data that you put into the system and the devices that can connect to it.
+---
+## Azure Architecture and services / The core architectural components of Azure
+###### The second learning path of Azure Fundamentals.
+### Azure Accounts
+##### Azure has an order to manage the resources in the cloud. First, you will need an Azure account, that can provide multiple subscriptions. A subscription is a way to join resources ou resources groups.
+* Azure account
+* Azure subscription
+* Resource group
+* Resources
+##### Using Azure you can enjoy multiple free services and earn credits to start using produts. At the free account, you have access to some services for 12 months, a credit to use at other services and other services that are always free.
+### Physical Infrastructure
+* **Region** A physical area where a datacenter (or multiple datacentres) is.
+* **Availability zone** Isolated datacenters within an Azure Region. They are connected through a dedicated network.
+<div align="center">
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/availability-zones-c22f95a3.png" width="700px" />
+</div>
+
+* **Region pair** A way to increase the resilience to an Azure Region. In a region pair, a region provides a backup to other one.
+* **Sovereign Region** Special regions that serves legal propouse. They are isolated from Azure regions.
+### Management infrastructure
+* **Resource** The basic building block of Azure. Anything you create is a resource.
+* **Resource Group** It is a group of resources. When you create a resource, you need to put it into a resource group. Resources groups can't be nested,and every resource can be only into a resource group.
+* **Azure Subscription** It is a way to facilitate the logical organization of resources groups and manage billing. It is mandatory to use a subscription to create a resource in Azure. An Azure account can hava multiple subscriptions.
+- Billing boundary is a subscription type that determines how an Azure account is billed for using Azure.
+- Access controll boundary is a subscription type that applies access polices at the subscription level.
+* **Management Groups** A organization scope above subscription level. It is a way to gather subscriptions that are related together.
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/management-groups-subscriptions-dfd5a108.png" width="700px" />
+</div>
