@@ -94,25 +94,37 @@
 * **Management Groups** A organization scope above subscription level. It is a way to gather subscriptions that are related together.
 <img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/management-groups-subscriptions-dfd5a108.png" width="700px" />
 </div>
-##Azure compute and networking services
-###Azure Virtual Machines
-#####Azure VM is a cumpute service that enables you to create and use virtual machines in the cloud. It is an Infrastructure as a Service product. You can choose VMs when you need total control of the operation system. Using VMS gives you the flexibility of virtualization without having to buy and maintain the physical hardware. You can choose an image when creating a VM. An image is a template used to create a VM.
-###Scale VMs in Azure
-####Virtual Machines scale sets
-######It is a tool to manage the scale of a group of VMs. The number of VMs can automatically increase or decrease in response to demand. It is possible to deploy a load balancer to make sure that your resources are beeing used efficiently.
-####Virtual Machines availability sets
-##### Update domain group defines VMs that can be updated at the same time
-##### Fault domain group defines a way to protect you against physical power or network failure.
 
-###Azuer Virtual Desktop
-#####Azure Virtual desktop is a kind of service that enables you to manage and make available complete solutions of a desktop in the cloud. You can use Windows and specific services in it through any device, with security by separating data that is in the cloud from the local device. You can provide machines for personal use to complete teams, and manage access using Azure AD and RBAC.
-###Azure Containers
-Azure Conteiner is a PaaS solution that enables you to run applications with a container technology.
-###Azure Functions
-Azure functions is a servless solution to run a simple and fast task. When you don't want to manage your OS or any other infrastructure topic, your can develop the function code and run it in Azure. Functions scales automatically and can be trigged by a lot of other services, or HTTP request.
-###Application Hosting Options
-####App Services
-*Web apps
-*API apps
-*WebJobs
-*Mobile apps
+---
+## Azure compute and networking services
+### Azure Virtual Machines
+###### Azure VM is a compute service that enables you to create and use virtual machines in the cloud. It is an Infrastructure as a Service product. You can choose VMs when you need total control of the operation system. Using VMS gives you the flexibility of virtualization without having to buy and maintain the physical hardware. You can choose an image when creating a VM. An image is a template used to create a VM.
+### Scale VMs in Azure
+#### Virtual Machines scale sets
+###### It is a tool to manage the scale of a group of VMs. The number of VMs can automatically increase or decrease in response to demand. It is possible to deploy a load balancer to make sure that your resources are beeing used efficiently.
+#### Virtual Machines availability sets
+* Update domain group defines VMs that can be updated at the same time
+* Fault domain group defines a way to protect you against physical power or network failure.
+### Azure Virtual Desktop
+###### Azure Virtual desktop is a kind of service that enables you to manage and make available complete solutions of a desktop in the cloud. You can use Windows and specific services in it through any device, with security by separating data that is in the cloud from the local device. You can provide machines for personal use to complete teams, and manage access using Azure AD and RBAC.
+### Azure Containers
+###### Azure Conteiner is a PaaS solution that enables you to run applications with a container technology.
+### Azure Functions
+###### Azure functions is a servless solution to run a simple and fast task. When you don't want to manage your OS or any other infrastructure topic, your can develop the function code and run it in Azure. Functions scales automatically and can be trigged by a lot of other services, or HTTP request.
+### Application Hosting Options
+#### App Services
+* Web apps
+* API apps
+* WebJobs
+* Mobile apps
+### Azure Virtual Network
+###### Configuring Azure virtual networks and subnets gives you the capacity of controll the connection between your resources on Azure, such as the connection with your on premisses datacenter and filter and route network traffic.
+* Isolation and segmentation
+* Internet communications
+* Communicate between Azure resources
+* Communicate with on-premises resources
+* Route network traffic
+* Filter network traffic
+* Connect virtual networks
+### Azure Virtual Private Network
+
