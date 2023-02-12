@@ -127,4 +127,13 @@
 * Filter network traffic
 * Connect virtual networks
 ### Azure Virtual Private Network
-
+###### A VPN is a more security way to keep traffic through the internet. It uses a encrypted form to send sensive data from a network to another one.
+### Azure ExpressRoute
+###### You can use ExpressRoute when you don't want to put your data over the internet to traffic between your on premisses datacenter and the Azure infrastructure. Using Azure ExpressRoute you create a direct connection to Azure to use a high speed connection, secure and more stable communication to Azure services.
+#### Benefits
+* Connectivity to Microsoft cloud services across all regions in the geopolitical region.
+* Global connectivity to Microsoft services across all regions with the ExpressRoute Global Reach.
+* Dynamic routing between your network and Microsoft via Border Gateway Protocol (BGP).
+* Built-in redundancy in every peering location for higher reliability.
+### Azure DNS
+###### You can use Azure DNS as a hosting service to resolve domain names by using Azure infrastructure.
