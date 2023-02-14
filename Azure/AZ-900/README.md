@@ -137,3 +137,30 @@
 * Built-in redundancy in every peering location for higher reliability.
 ### Azure DNS
 ###### You can use Azure DNS as a hosting service to resolve domain names by using Azure infrastructure.
+---
+## Azure Storage Services
+### Azure Sotrage Redundancy
+#### Redundancy in the primary region
+##### Locally redundant storage
+<div align="center">
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage-services/media/locally-redundant-storage-37247957.png" width="700px" />
+</div>
+
+##### Zone-redundant storage
+<div align="center">
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage-services/media/zone-redundant-storage-6dd46d22.png" width="700px" />
+</div>
+
+#### Redundancy in a secondary region
+##### Geo-redundant storage
+<div align="center">
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage-services/media/geo-redundant-storage-3432d558.png" width="700px" />
+</div>
+
+##### Geo-zone-redundant storage
+<div align="center">
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage-services/media/geo-zone-redundant-storage-138ab5af.png" width="700px" />
+</div>
+
+##### Read access to data in the secondary region
+
