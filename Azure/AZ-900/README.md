@@ -139,28 +139,36 @@
 ###### You can use Azure DNS as a hosting service to resolve domain names by using Azure infrastructure.
 ---
 ## Azure Storage Services
+### Storage Accounts
+###### A storage account provides a unique namespace for your storage data. There is a lot of storage account types that determines the redundancy level to your data, such as specific tools to match your needs.
+## Azure Storage Services
 ### Azure Sotrage Redundancy
 #### Redundancy in the primary region
 ##### Locally redundant storage
+###### LRS replicates your data three times within a single datacenter in the primary region. It is the lowest cost redundancy option. This option protects you from drive failures, but not from a datacenter disaster.
 <div align="center">
 <img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage-services/media/locally-redundant-storage-37247957.png" width="700px" />
 </div>
 
 ##### Zone-redundant storage
+###### ZRS replicates your data within three datacenters separately. This mode protects you from datacenters disasters, and it has instantly re-routing of a data center becomes inaccessible.
 <div align="center">
 <img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage-services/media/zone-redundant-storage-6dd46d22.png" width="700px" />
 </div>
 
 #### Redundancy in a secondary region
 ##### Geo-redundant storage
+###### GRS replicates data three times in a single datacenter like LRS and replicates asynchronously to the secondary one.
 <div align="center">
 <img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage-services/media/geo-redundant-storage-3432d558.png" width="700px" />
 </div>
 
 ##### Geo-zone-redundant storage
+###### GZRS replicates data three times like ZRS in the primary region, and then replicates asynchronously to the secondary one like LRS.
 <div align="center">
 <img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-storage-services/media/geo-zone-redundant-storage-138ab5af.png" width="700px" />
 </div>
 
 ##### Read access to data in the secondary region
+###### You need to enable access to data when using GRS or GZRS. Data may not be updated during the RPO.
 
