@@ -171,4 +171,31 @@
 
 ##### Read access to data in the secondary region
 ###### You need to enable access to data when using GRS or GZRS. Data may not be updated during the RPO.
-
+### Azure Storage Services
+* Azure Blob Storage
+* Azure Files
+* Azure Queues
+* Azure Disks
+#### Benefits of Azure Storage
+* Durable and highly available
+* Secure
+* Scalable
+* Managed
+* Accessible
+#### Blob Storage
+###### It is an object storage solution for the cloud. You can store a massive amount of data, such as text, images and binary data. It is unstructured data solution, that means there is no restriction for the data type you store in a blob. You can access blobs from HTTP or HTTPS protocol, and use libraries of a set of languages. There are different types of access tiers, such as hot access, cold access and archive.
+#### Azure Files
+###### It is a service that offers a fully managed file shares through the cloud.
+#### Queue Storage
+###### It is a service to put and consume a large amount of messages asynchronously.
+#### Disk Storage
+###### Storage service to be used for VMs on Azure.
+### Azure Migration Options
+#### Azure Migrate
+###### It is a service that helps to migrate from an on-premises datacenter to the cloud.
+#### Azure Data Box
+###### It is a physical migration service to be used to transfer data from on-premises to the cloud.
+### AzCopy
+###### It is a command line tool to copy and manage blob or files in your data storage account.
+### Azure File Sync
+###### You can sync your data in a Windows Server with the cloud.
