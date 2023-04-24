@@ -199,3 +199,21 @@
 ###### It is a command line tool to copy and manage blob or files in your data storage account.
 ### Azure File Sync
 ###### You can sync your data in a Windows Server with the cloud.
+---
+## Azure Identity, access and security
+### Azure directory services
+
+### Azure authentication methods
+
+### Azure external identities
+
+### Azure conditional access
+
+### Azure Role-Based Access Control
+
+### Zero trust model
+
+### Defense in depth
+
+### Microsoft Defender for Cloud
+
