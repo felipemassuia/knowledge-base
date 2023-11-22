@@ -202,6 +202,13 @@
 ---
 ## Azure Identity, access and security
 ### Azure directory services
+###### Microsoft Entra ID is the a directory service that allows you to sign in and access cloud aaplications that you develop and it helps you to maintain your on premisses AD deployment.
+#### What Microsoft Entra ID does
+* Authentication
+* Single sign on
+* Application management
+* Device registration
+###### You can connect your AD with Microsoft Entra ID using Microsoft Entra Connect. It allows you to synchronizes changes between both identity systems.
 
 ### Azure authentication methods
 
