@@ -222,6 +222,10 @@
 ###### Single sign on is a tool used to guarantee the authentication made in one system, and is trusted in subsystems.
 
 ### Azure external identities
+###### Azure can interact to users and componentes outside Azure using Microsoft Entra External ID. It is possible to bring to Azure the entities from another systems.
+<div align="center">
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/azure-active-directory-external-identities-5a892021.png" width="700px" />
+</div>
 
 ### Azure conditional access
 
