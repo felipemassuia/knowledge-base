@@ -231,8 +231,13 @@
 ###### Azure conditional access is a tool in Azure that helps IT administrators protect assets using signals from the users (where they are, when they are trying to access a resource). The signals change the behavior of the sign in attempt, for example.
 
 ### Azure Role-Based Access Control
+###### RBAC is a model to keep access to resources using the principle of least privilege, where users only have authority to use/read/administrate resources if they really need to do it. With RBAC, users can assume roles that have a set of rules to keep their access.
 
 ### Zero trust model
+###### The Zero Trust model is a security model that assumes that a breach can happen in the internal network, so the internal resources need to be protected. In the Zero trust model, you keep all the resources protected.
+<div align="center">
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/zero-trust-cf9202be.png" width="700px" />
+</div>
 
 ### Defense in depth
 
