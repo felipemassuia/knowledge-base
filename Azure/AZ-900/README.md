@@ -228,6 +228,7 @@
 </div>
 
 ### Azure conditional access
+###### Azure conditional access is a tool in Azure that helps IT administrators protect assets using signals from the users (where they are, when they are trying to access a resource). The signals change the behavior of the sign in attempt, for example.
 
 ### Azure Role-Based Access Control
 
