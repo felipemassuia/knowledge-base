@@ -211,6 +211,15 @@
 ###### You can connect your AD with Microsoft Entra ID using Microsoft Entra Connect. It allows you to synchronizes changes between both identity systems.
 
 ### Azure authentication methods
+###### Azure has a set of authentication capabilities, such as passwords, multifactor, passwordless and SSO.
+##### Password
+###### Classic form to authenticate to a system. It is convenient, however it has low security.
+##### Multifactor
+###### It is not convenient, because you need to provide a password and another code as a second factor. Even so, it has a high level of security.
+##### Passwordless
+###### It is a convenient and high secure way to authenticate. The users can use something they have, such as a fingerprint or a code used in their authentication app.
+##### SSO
+###### Single sign on is a tool used to guarantee the authentication made in one system, and is trusted in subsystems.
 
 ### Azure external identities
 
