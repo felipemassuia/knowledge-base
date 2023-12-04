@@ -240,6 +240,14 @@
 </div>
 
 ### Defense in depth
+###### Defense in depth is a strategy to protect your environment based in creating protection layers in different levels.
+<div align="center">
+<img src="https://learn.microsoft.com/en-us/training/wwl-azure/describe-azure-identity-access-security/media/defense-depth-486afc12.png" width="700px" />
+</div>
 
 ### Microsoft Defender for Cloud
-
+###### Microsoft defender is a service that is natively integrated with resources in Azure and helps IT administrators to monitor and act to keep the environment secure. Microsoft Defender has native protection in:
+* SAAS
+* Azure Data Services
+* Networks
+###### Microsoft Defender can also provide alerts and take actions automatically.
