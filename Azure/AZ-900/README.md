@@ -271,3 +271,5 @@
 * Budget alerts
 * Credit alerts
 * Department spending quota alerts.
+### Purpose of tags
+###### Tags are another way, such as resource groups and subscription, to organize resources in Azure.
