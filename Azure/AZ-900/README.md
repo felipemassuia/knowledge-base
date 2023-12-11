@@ -266,3 +266,8 @@
 ###### Azure provides two tools to compare and estimate pricing:
 * TCO - Total Cost Calculator provides a comparison of the cost of an on prem resource and the cost of provisioning the same resource in Azure
 * Pricing Calculator - Provides an estimate value of the cost of provisioning an resource in Azure
+### Cost Management tools
+###### Cost management is a resource in Azure that can help you generate alerts when a resource is reaching a limit.
+* Budget alerts
+* Credit alerts
+* Department spending quota alerts.
