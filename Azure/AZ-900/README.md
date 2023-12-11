@@ -251,3 +251,14 @@
 * Azure Data Services
 * Networks
 ###### Microsoft Defender can also provide alerts and take actions automatically.
+
+---
+## Cost Management in Azure
+### Factors that can affect cost
+###### Azure shifts development cost from the capital expense (CapEx) to operational expense (OpEx). The factors that impact this cost are:
+* Resource type
+* Consumption
+* Maintenance
+* Geography
+* Subscription type
+* Azure Marketplace
