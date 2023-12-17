@@ -221,6 +221,7 @@
 ##### SSO
 ###### Single sign on is a tool used to guarantee the authentication made in one system, and is trusted in subsystems.
 
+
 ### Azure external identities
 ###### Azure can interact to users and componentes outside Azure using Microsoft Entra External ID. It is possible to bring to Azure the entities from another systems.
 <div align="center">
@@ -273,3 +274,11 @@
 * Department spending quota alerts.
 ### Purpose of tags
 ###### Tags are another way, such as resource groups and subscription, to organize resources in Azure.
+
+---
+## Features and tools in Azure for governance and compliance
+### Microsoft Purview
+### Azure Policy
+### Resource Locks
+###### In Azure, there is a service known as Resources Locks. You can use it as an additional layer of security when changing or deleting a resource accidentally. If you apply a lock in a resource, you must remove the lock before apply the change in the resource. If you apply a lock to a resource group, all the resources will be applied with the lock.
+### Service Trust Portal
