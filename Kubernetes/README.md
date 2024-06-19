@@ -17,6 +17,69 @@
 
 #### Usefull commands
 > k run nginx-pod --image=nginx:latest
+
 > k get pods --watch
+
+> k get pods -o wide
+
 > k describe pod nginx-pod
+
+> k delete pod nginx-pod
+
+> k exec -it nginx-pod -- bash
+
+> k delete pods --all
+
+#### Creating the first pod using declarative way
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod1
+spec:
+  containers:
+    - name: nginx-container1
+      image: nginx
+```
+
+> k apply -f defaultPodDefinition.yaml
+
+### Services
+###### Kubernetes has a feature called "service" that resolves the problem of communication between different pods. Pods can have their IP addresses changed when they are recreated, making it difficult to communicate between them. Services provide a fixed IP and a stable DNS name so that pods can communicate with each other, regardless of changes to pod IPs. There are three types of services: ClusterIP, NodePort, and LoadBalancer, each with a specific purpose.
+
+### ClusterIP
+###### The ClusterIP service allows the access from a pod to another using, inside the clouster.
+###### Service definition:
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-nginx-pod
+spec:
+  selector:
+    app: nginx-pod
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
+  ```
+
+###### Inside the pod, you need to add a label that defines the target to service access:
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod1
+  labels:
+    app: nginx-pod
+spec:
+  containers:
+    - name: nginx-container1
+      image: nginx
+      ports:
+        - containerPort: 80
+```
+
 
