@@ -82,4 +82,40 @@ spec:
         - containerPort: 80
 ```
 
+### ConfigMap
+###### In Kubernetes, a `ConfigMap` (short for "Configuration Map") is an object that stores configuration data as key-value pairs. It's used to decouple the configuration of your application from its code and make it easier to manage and maintain.
+
+###### A ConfigMap is like an environment variable file, but instead of being stored as individual environment variables, it's stored as a single object that can be consumed by your application.
+
+###### Example using ConfigMap:
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-configmap
+data:
+  MYSQL_ROOT_PASSWORD: "123456"
+  MYSQL_DATABASE: empresa
+  MYSQL_USER: user
+  MYSQL_PASSWORD: "123456"
+  ```
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db-noticias
+  labels:
+    app: db-noticias
+spec:
+  containers:
+    - name: db
+      image: aluracursos/mysql-db:1
+      ports:
+        - containerPort: 3306
+      envFrom:
+        - configMapRef:
+            name: db-configmap
+```
 
