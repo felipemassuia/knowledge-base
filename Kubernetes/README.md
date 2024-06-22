@@ -119,3 +119,33 @@ spec:
             name: db-configmap
 ```
 
+### ReplicaSet
+###### In Kubernetes, a ReplicaSet (also known as ReplicationController) is an object that ensures a specified number of replicas (or copies) of a Pod  are running at any given time. It's a fundamental concept in Kubernetes, and it helps you manage the scalability and availability of your applications.
+
+```yaml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: portal-noticias-rs
+  labels:
+    app: portal-noticias-rs
+spec:
+  template:
+    metadata:
+      labels:
+        app: portal-noticias
+    spec:
+      containers:
+      - name: portal
+        image: aluracursos/portal-noticias:1
+        ports:
+          - containerPort: 80
+        envFrom:
+          - configMapRef:
+              name: portal-configmap
+  replicas: 3
+  selector:
+    matchLabels:
+      app: portal-noticias
+```
+
