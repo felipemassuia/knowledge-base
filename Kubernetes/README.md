@@ -149,3 +149,20 @@ spec:
       app: portal-noticias
 ```
 
+### Deployments
+###### TODO
+
+> k apply -f deployment.yaml
+
+> k get deployments
+
+> k rollout status deployment/deployment-name
+
+> k edit deployment/deployment-name
+
+> k rollout history deployment/portal-noticias-dp
+
+> k rollout history deployment/portal-noticias-dp --revision=1
+
+> k rollout undo deployment/portal-noticias-dp
+

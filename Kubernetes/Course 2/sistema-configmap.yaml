@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sistema-configmap
+data:
+  HOST_DB: svc-db-noticias:3306
+  USER_DB: user
+  PASS_DB: "123456"
+  DATABASE_DB: empresa
